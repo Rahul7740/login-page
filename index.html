@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css">
+  <title>Login Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <button class="show login-btn">login</button>
+  
+  <div class="login-div">
+    <div class=" login login1 loginPage1">
+      <img src="./image/Login-page-img.png" alt="">
+    </div>
+    <div class=" login login2 loginPage2">
+      <h2>Login your Account</h2>
+      <form>
+        <div>
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="Enter your email" required />
+        </div>
+        <div class="password">
+          <img class="eye" src="./image/eye-svgrepo-com.svg" >
+          <img class="eyeOff" src="./image/eye-off-svgrepo-com.svg" >
+          <label for="password">Password</label>
+          <input id="password" type="password" placeholder="Enter your password" />
+        </div>
+        <button class="login-btn">Login</button>
+      </form>
+      <p class="or">- OR -</p>
+      <p class="">Don't have an account? <button class="sign-btns sign-up-btns">Sigh-Up</button></p>
+    </div>
+  </div>
+  <div class="login-div sighUp-div">
+    <div class=" login login2 sighUp1">
+      <h2>Login your Account</h2>
+      <form>
+        <div>
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Enter your name" required />
+        </div>
+        <div>
+          <label for="email12">Email</label>
+          <input id="email12" type="email" placeholder="Enter your email" required />
+        </div>
+        <div>
+          <label for="password12">Password</label>
+          <input id="password12" value="" type="text" placeholder="Enter your password" />
+          <p class="passGenerator">strong password generator</p>
+        </div>
+        <button class="login-btn">Login</button>
+      </form>
+      <p class="or">- OR -</p>
+      <p class="">Already have an account! <button class="sign-btns sing-in-btn">Sigh-In</button></p>
+    </div>
+    <div class=" login login1 sighUp2">
+      <img src="./image/sign-up-img.png" alt="">
+    </div>
+  </div>
+  
+  <script src="./script.js"></script>
+</body>
+
+</html>
