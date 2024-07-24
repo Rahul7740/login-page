@@ -58,14 +58,16 @@ let passGenerator = document.querySelector(".passGenerator")
 
 let abc = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 let operator = ["!","@","+","&","$","-","/","^","=","*"]
-let a = (abc.at(Math.random()*26))
-let b = abc.at(Math.random()*26).toUpperCase()
-let c = (Math.round(Math.random()*9)) ;
-let d = (operator.at(Math.random()*10))
-let pass = (abc.at(Math.random()*26))+a+b+(Math.round(Math.random()*9))+c+d+(Math.round(Math.random()*9))+(Math.round(Math.random()*9))+b+(Math.round(Math.random()*9))+(operator.at(Math.random()*10))+(abc.at(Math.random()*26));
+
 
 
 passGenerator.addEventListener("click",()=>{
+    let a = (abc.at(Math.random()*26))
+    let b = abc.at(Math.random()*26).toUpperCase()
+    let c = (Math.round(Math.random()*9)) ;
+    let d = (operator.at(Math.random()*10))
+    let pass = (abc.at(Math.random()*26))+a+b+(Math.round(Math.random()*9))+c+d+(Math.round(Math.random()*9))+(Math.round(Math.random()*9))+b+(Math.round(Math.random()*9))+(operator.at(Math.random()*10))+(abc.at(Math.random()*26));
+
     let passPrint = document.getElementById("password12")
     let aaa = Array.from(pass)
     shuffle(aaa)
